@@ -2,10 +2,6 @@ function forclear() {
     document.getElementById("output").innerHTML = "0";
 }
 
-<button id="r1-1" onclick="forclear()" style="width: 138px;">
-     C
-</button>
-
 function removeZero() {
     var value = document.getElementById("output").innerHTML;
     if (value == "0") {
@@ -20,14 +16,10 @@ function perc() {
     document.getElementById("output").innerHTML = value;
 }
 
-<button id="r1-3" onclick="perc()"> % </button>
-
 function fordisplay(value) {
     removeZero()
     document.getElementById("output").innerHTML += value;
 }
-
-<button id="r3-1" value="4" onclick="fordisplay('4') ">4</button>
 
 function solve() {
     removeZero()
@@ -35,5 +27,3 @@ function solve() {
     var solved = eval(equation);
     document.getElementById('output').innerHTML = solved;
 }
-
-<button id="r5-3" value="=" onclick="solve()" >=</button>
